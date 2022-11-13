@@ -1,0 +1,21 @@
+<section id="proyectos">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3">
+        <h1>Proyectos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <ul>
+        <li *ngFor="let proyecto of proyectosLista">
+            <div class="col text-center mb-3">
+              <h3>{{proyecto.nombre}}</h3>
+              <img [src]="proyecto.imagen" class="img-proy">
+              <p class="p-3">{{proyecto.descripcion}}</p>
+              <a [href]="proyecto.link" target="_blank" class="btn btn-outline-dark">Ver Repositorio</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

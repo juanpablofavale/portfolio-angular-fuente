@@ -1,1 +1,262 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    /* DARK */
+    --fondo-dark-pri: #1d3538;
+    --fondo-dark-sec: #011214;
+    --texto-dark-pri: #ddd;
+    --texto-dark-sec: #16f5fd;
+    --sombra-dark: #2ebaeb;
+    --capa-dark: #000000bb;
+
+    /* LIGHT */
+    --fondo-light-pri: #75dbfd;
+    --fondo-light-sec: #062b30;
+    --texto-light-pri: #000000;
+    --texto-light-sec: #ddd;
+    --sombra-light: #ffffff;
+    --capa-light: #00000099;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo-light-pri);
+    font-size: 20px;
+}
+
+/* HEADER */
+
+header a{
+    color: var(--texto-light-pri) !important;
+    font-weight: bold !important;
+}
+
+header button.navbar-toggler{
+    background-color: var(--texto-light-sec) !important;
+}
+
+header nav{
+    background: linear-gradient(0, var(--fondo-light-pri), var(--fondo-light-sec));
+}
+
+header a:hover{
+    color: var(--texto-light-sec) !important;
+    transform: translate(0, -3px);
+    transition: 0.5s;
+    text-shadow: 1px 1px 10px var(--sombra-light);
+}
+
+.login{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#logo{
+    width: 150px;
+}
+
+/* MAIN */
+
+.banner-relativo{
+    position: relative;
+}
+
+.capa{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    background-color: var(--capa-light);
+}
+
+.img-banner{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.img-perfil{
+    border-radius: 50%;
+    width: 250px;
+    margin: auto;
+}
+
+.perfil{
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    width: 100%;
+}
+
+section{
+    color: var(--texto-light-pri);
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+#inicio{
+    color: var(--texto-dark-pri);
+}
+
+section ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 10px;
+}
+
+section .card{
+    width: 250px;
+    background-color: var(--fondo-light-pri);
+    color: var(--texto-light-pri);
+    border: none;
+    text-align: center;
+}
+
+.card img, .img-habil{
+    width: 250px;
+    height: 200px;
+    object-fit:scale-down;
+}
+
+.img-proy{
+    width: 50%;
+}
+
+/* GENERAL */
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+#tema{
+    cursor: pointer;
+}
+
+.sol{
+    display: none;
+}
+
+footer a, .luna{
+    color: var(--texto-light-pri);
+}
+
+footer a:hover, .luna:hover{
+    color: var(--texto-light-sec) !important;
+    transition: 0.5s;
+    text-shadow: 0px 0px 15px var(--sombra-light);
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}
+
+footer ul{
+    background-color: var(--fondo-light-sec);
+    background: linear-gradient(180deg, var(--fondo-light-sec), var(--fondo-light-pri), var(--fondo-light-sec));
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--sombra-light);
+    gap: 25px;
+}
+
+@media screen and (max-width:1100px) {
+    i{
+        font-size: 35px;
+    }
+    .img-proy{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    footer ul{
+        gap: 10px;
+    }
+    i{
+        font-size: 20px;
+    }
+    .img-proy{
+        width: 100%;
+    }}
+
+/* DARK */
+
+.dark .luna{
+    display: none;
+}
+
+.dark .sol{
+    display: initial;
+}
+
+.dark{
+    background-color: var(--fondo-dark-pri);
+    color: var(--texto-dark-pri);
+}
+
+.dark header a{
+    color: var(--texto-dark-pri) !important;
+}
+
+.dark header button.navbar-toggler{
+    background-color: var(--texto-dark-sec) !important;
+}
+
+.dark header nav{
+    background: linear-gradient(0, var(--fondo-dark-pri), var(--fondo-dark-sec));
+}
+
+.dark header a:hover{
+    color: var(--texto-dark-sec) !important;
+    text-shadow: 1px 1px 10px var(--sombra-dark);
+}
+
+.dark .capa{
+    background-color: var(--capa-dark);
+}
+
+.dark section{
+    color: var(--texto-dark-pri);
+}
+
+.dark section .card{
+    background-color: var(--fondo-dark-pri);
+    color: var(--texto-dark-pri);
+}
+
+.dark footer a, .sol{
+    color: var(--texto-dark-pri);
+}
+
+.dark footer a:hover, .sol:hover{
+    color: var(--texto-dark-sec) !important;
+    text-shadow: 0px 0px 15px var(--sombra-dark);
+}
+.dark footer ul{
+    background-color: var(--fondo-dark-sec);
+    background: linear-gradient(180deg, var(--fondo-dark-sec), var(--fondo-dark-pri), var(--fondo-dark-sec));
+    box-shadow: 0 0 15px var(--sombra-dark);
+}
+
+.dark .btn{
+    color: var(--texto-dark-pri);
+}

@@ -1,0 +1,21 @@
+<section id="estudios">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <h1>Estudios</h1>
+      </div>
+    </div>
+  </div>
+  <ul class="container">
+    <li *ngFor="let estudios of estudiosLista">
+      <div class="card">
+        <img [src]="estudios.logo" class="card-img-top" alt="{{estudios.nombre}}">
+        <div class="card-body">
+          <h5 class="card-title">{{estudios.nombre}}</h5>
+          <p class="card-text">{{estudios.titulo}}</p>
+          <b>{{estudios.fecha}}</b>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

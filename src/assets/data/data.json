@@ -1,0 +1,80 @@
+{
+    "name": "Juan Pablo Favale",
+    "banner": "./assets/img/banner2.jpeg",
+    "profile": "./assets/img/perfil.jpg",
+    "about": "Tecnico en Informatica Personal y Profesional con Especializacion en Diseño Web Full Stack Developer Jr.",
+    "experiencia": [
+        {
+            "logo": "./assets/img/AP%20(1).png",
+            "empresa": "Argentina Programa",
+            "trabajo": "Portfolio Web Juan Pablo Favale",
+            "fecha": "15-07-2022 - 15-01-2023"
+        }
+    ],
+    "estudios": [
+        {
+            "logo": "./assets/img/16-oro.png",
+            "nombre": "Escuela N°16",
+            "titulo": "Primaria",
+            "fecha": "1993 - 2001"
+        },
+        {
+            "logo": "./assets/img/eest2.png",
+            "nombre": "Escuela Enseñanza Tecnica N°2",
+            "titulo": "Tecnico en Informatica Personal y Profesional",
+            "fecha": "2002 - 2004"
+        },
+        {
+            "logo": "./assets/img/AP%20(1).png",
+            "nombre": "Argentina Programa",
+            "titulo": "Full Stack Developer Jr.",
+            "fecha": "2022 - 2023"
+        }
+    ],
+    "habilidades": [
+        {
+            "nombre": "HTML 5",
+            "logo": "./assets/img/HTML5_black.svg.png"
+        },
+        {
+            "nombre": "CSS",
+            "logo": "./assets/img/CSS3.svg.png"
+        },
+        {
+            "nombre": "Bootstrap",
+            "logo": "./assets/img/Bootstrap.svg.png"
+        },
+        {
+            "nombre": "JavaScript",
+            "logo": "./assets/img/JavaScript.svg.png"
+        },
+        {
+            "nombre": "TypeScript",
+            "logo": "./assets/img/Typescript.svg.png"
+        },
+        {
+            "nombre": "Angular",
+            "logo": "./assets/img/angular.png"
+        },
+        {
+            "nombre": "mySql",
+            "logo": "./assets/img/mysql.png"
+        },
+        {
+            "nombre": "Java",
+            "logo": "./assets/img/Java.png"
+        },
+        {
+            "nombre": "Spring Boot",
+            "logo": "./assets/img/spring_boot.png"
+        }
+    ],
+    "proyectos": [
+        {
+            "nombre": "Portfolio Web",
+            "imagen": "./assets/img/miniatura-proy-portfolio.png",
+            "descripcion": "Portfolio Web Utilizando Tecnologias aprendidas en el curso Argentina Programa",
+            "link": "#"
+        }
+    ]
+}
